@@ -1,0 +1,25 @@
+{
+  "signature": "58XFJEAbNfZKpwooQ7EJezvBGJhXPgFdbSXUPkyZJcqJmQ5DJBkJwauEXQBLXwJoCh9yY9EMg7rG5T6Xi7GJBz5M",
+  "slot": 456176679,
+  "jupiter_inner": [
+    {
+      "index": 3,
+      "program": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+      "stack_height": 2,
+      "accounts": [
+        "37hJBDnntwqhGbK7L6M1bLyvccj4u55CCUiLPdYkiqBN"
+      ],
+      "data_bytes": 133,
+      "prefix_hex": "e445a52e51cb9a1d15225c9ee01db4f3",
+      "close_event_flags": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        7,
+        7
+      ]
+    }
+  ]
+}

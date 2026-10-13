@@ -1,0 +1,26 @@
+# Wallet/UI safe delivery verification
+
+Decision: safe implementation and native browser gate passed. Live owner/provider acceptance remains open.
+
+Baseline was clean `514283f9cfa824dc3fbb82a92fba21c5670cb5f3`; continuation checkpoint SHA256 matched `2bbf43519e0d12a3ba83b5293c796f77618481a659f694e760f9f76d2477103d`. The assigned branch/worktree is `flydge/jupiter-wallet-ui-20261012` at `/Users/flydge/Documents/ChatGPT/antytilt-worktrees/20261012-jupiter-wallet-ui`. Canonical nested main and earlier ticket checkout were preserved.
+
+The real Chrome path used the existing app login and account drawer, native ownership proof, actual native account discovery, separate create-with-seed nonce + owner wSOL ATA setup, explicit USD150 floor and current fee/rent review, sign-only arm, full API/PG/validator restart preserving ARMED state, local disable, separate nonce advance and observed REVOKED, then a fresh replacement ticket and one explicit manual trigger. The final result is **REQUEST_PENDING**, with genuine request creation by the captured Jupiter executable, consumed nonce and unchanged synthetic position. It is not keeper closure. Physical Phantom was never connected or asked to sign.
+
+The external before/after records show identical ticket/message/packet identity and native transaction-signature count **2 → 2** across trigger. Native owner cost was **5,106,690 lamports**, within the reviewed 5,000 fee + 6,493,680 rent caps. Real SOL spent was zero. The earlier nonce/ATA setup and unused revocation are separate transactions. Full manifests, hashes, screenshot paths and evidence boundaries are in `native-browser.json`.
+
+A fresh verified native app session was cold-reloaded after the final UI changes. Its verified wallet and same REQUEST_PENDING ticket were restored without connect/sign calls; message-signature counters stayed **3 → 3**, and transaction-signature counters stayed **2 → 2**. Discovery now distinguishes initial loading and failed reads from a confirmed empty result. Evidence collection writes immutable suffixed records instead of replacing existing snapshots.
+
+Fresh automated verification:
+
+- Node24 ticket + wallet tests: **41 passed, 0 failed**. Includes real PostgreSQL atomic prepare ownership, encrypted ARMED authorization rollback/restart, six concurrent same-request prepares with a two-connection pool, active ticket recovery past33 historical rows, verified second-user/same-wallet IDOR refusal, expiring setup intents, review/action tamper refusal, replay/origin/session/expiry and disconnect proof races.
+- Signature/message, unsigned simulation, no-resend/intent, genuine event binding, v0/ALT/split receipt and same-slot finalized ordering tests pass. Same-slot proof shape fixtures remain explicitly synthetic.
+- Existing database, exchange API, Redis, Risk Guard and risk automation regressions pass. Exchange API failure messages exercised by its synthetic cancellation/protection cases are expected test output.
+- Frontend TypeScript, server/harness TypeScript and Vite production build pass. Vite reports its chunk-size advisory; Jupiter wallet crypto/UI is loaded as a separate229KB chunk when opening its tab. No deployment is implied.
+- Python runtime parses/compiles and the bounded CUA walkthrough module syntax checks. No signed packets, private keys or generated caches are kept in the checkout.
+- Actual mainnet UI opens in Chrome with `Solana mainnet`, `OWNER WALLET`, `Phantom sign-only available` and the owner-controlled connection button. Fresh read-only Jupiter executable/deployment/mint checks and bounded position discovery for a throwaway public key succeeded. The empty probe is not evidence about the human owner's positions.
+
+Independent Sol review and re-review found no remaining Critical/Important issue after fixing disconnect/challenge and stale-response races, prepare-ID retirement/lost-response recovery, active-first restoration and expired finite setup-action recovery. Further integrity regressions protect review expiry and separate setup/revoke previews with vault AAD domains. A suspected duplicate-return connection issue was explicitly withdrawn: `finally` releases the client before adopting the returned promise; the six-request/two-connection regression passes. No signed-packet exposure, cross-user bypass or blind resend was found in reviewed code. Review is code/local evidence, separate from provider acceptance.
+
+User action still required: open the mainnet surface in Chrome, personally connect/verify Phantom, select an existing dedicated SOL Long, choose the finite floor/cost/expiry, review any separate setup, sign the exact close ticket without sending, then approve its one exact trigger. The agent has performed no real wallet connection, signing, setup/funding, trade/public broadcast, push, merge or deployment. Actual durable-nonce Phantom UX, absence of a second wallet signature in the owner's live scenario, and strict genuine keeper CLOSED proof remain unaccepted.
+
+No background lifecycle polling or automation was created. Task-owned local runtime PIDs/ports are recorded externally and remain running for owner review. Shutdown must stop the live preview before the native supervisor/isolated PostgreSQL, retaining encrypted state/evidence.

@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-12T20:22:59.647107+00:00",
+  "endpoint": "https://api.mainnet-beta.solana.com",
+  "read_only": true,
+  "receipts": [
+    {
+      "signature": "2JnQN9sRh7hY6qMpPKx7o9m4yiV33aK7HxPtKEibZiAbTJnB6WG9eJAp9easM8ZBhr5HH3pYvNCgX4WpwihN6D16",
+      "slot": 456176683,
+      "version": 0,
+      "instructions": [
+        "refreshAssetsUnderManagement"
+      ],
+      "loaded_address_count": 30,
+      "successful": true
+    },
+    {
+      "signature": "58XFJEAbNfZKpwooQ7EJezvBGJhXPgFdbSXUPkyZJcqJmQ5DJBkJwauEXQBLXwJoCh9yY9EMg7rG5T6Xi7GJBz5M",
+      "slot": 456176679,
+      "version": 0,
+      "instructions": [
+        "closePositionRequest2"
+      ],
+      "loaded_address_count": 0,
+      "successful": true
+    },
+    {
+      "signature": "4X1RwxMFxYM1xXKnxSTyD6pFwV7LfDkP7yz5Zknu4kwqnzQQGZUus9p7oJTCyLkBQZHQFiMuWqC7Th3ahDMvyG6u",
+      "slot": 456176679,
+      "version": 0,
+      "instructions": [
+        "closePositionRequest2",
+        "instantCreateTpsl"
+      ],
+      "loaded_address_count": 14,
+      "successful": true
+    },
+    {
+      "signature": "23zphi7xVWW1DRY31XMM11uZufcdQ3ZKRiqgrMF17L789AwdbtWvqwnTwU5oSviyXiiagSUEbFamtzG6U2E9HbBb",
+      "slot": 456176663,
+      "version": 0,
+      "instructions": [
+        "createIncreasePositionMarketRequest"
+      ],
+      "loaded_address_count": 0,
+      "successful": false
+    }
+  ]
+}

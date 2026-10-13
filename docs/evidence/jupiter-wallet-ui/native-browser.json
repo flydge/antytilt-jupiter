@@ -1,0 +1,106 @@
+{
+  "result": "NATIVE_BROWSER_REQUEST_PENDING_PASSED",
+  "network": "isolated-native-loopback",
+  "synthetic_position": true,
+  "disposable_signer": true,
+  "real_sol_spent": 0,
+  "keeper_present": false,
+  "live_owner_acceptance": false,
+  "live_keeper_closed": false,
+  "checks": {
+    "exact_packet_unchanged": true,
+    "exact_ticket_unchanged": true,
+    "no_second_transaction_signature": true,
+    "position_unchanged": true,
+    "genuine_request_created": true,
+    "nonce_consumed": true,
+    "unused_revoked": true,
+    "encrypted_review_and_envelope": true,
+    "status": "REQUEST_PENDING",
+    "native_owner_cost_lamports": 5106690,
+    "full_runtime_restart_preserved_state": true,
+    "cold_reload_restored_verified_wallet": true,
+    "cold_reload_no_new_signature": true
+  },
+  "artifacts": {
+    "browser-before.json": {
+      "path": "/var/folders/kq/zqwqqfmj4072vtjqsv4wsd700000gn/T/jupiter-wallet-ui-native-373km4l1/browser-before.json",
+      "bytes": 937,
+      "sha256": "52b279411b08846dae7f2d1fe1ed0bd2b63627999d6fa3754f83525fc2179531"
+    },
+    "browser-after.json": {
+      "path": "/var/folders/kq/zqwqqfmj4072vtjqsv4wsd700000gn/T/jupiter-wallet-ui-native-373km4l1/browser-after.json",
+      "bytes": 944,
+      "sha256": "054e094a16bbfb31051f781abf6c2b94cfdad75f22b40886ffa5748de82427ca"
+    },
+    "native-ui.png": {
+      "path": "/var/folders/kq/zqwqqfmj4072vtjqsv4wsd700000gn/T/jupiter-wallet-ui-native-373km4l1/native-ui.png",
+      "bytes": 69861,
+      "sha256": "6a25da1ca24565644781bd448d2c2c35bcd138f7cdb2ef39dd790ad62447148a"
+    },
+    "live-ui.png": {
+      "path": "/var/folders/kq/zqwqqfmj4072vtjqsv4wsd700000gn/T/jupiter-wallet-ui-native-373km4l1/live-ui.png",
+      "bytes": 35668,
+      "sha256": "ffeba1f19886154ce10d54b2c1772d720e5b22deb1091cdf24e8d1099c130712"
+    },
+    "browser-after-1791842759079.json": {
+      "path": "/var/folders/kq/zqwqqfmj4072vtjqsv4wsd700000gn/T/jupiter-wallet-ui-native-373km4l1/browser-after-1791842759079.json",
+      "bytes": 944,
+      "sha256": "2897fc7e63c076ceca381d3c0c67c200d5f9db3b9d6b6f8dfe0232ff8f7ce0c3"
+    },
+    "browser-after-1791842768558.json": {
+      "path": "/var/folders/kq/zqwqqfmj4072vtjqsv4wsd700000gn/T/jupiter-wallet-ui-native-373km4l1/browser-after-1791842768558.json",
+      "bytes": 944,
+      "sha256": "e5e225cf56d7667b43efb6099a3bca403f2dfc420270da873c24f07573889a03"
+    },
+    "native-ui-restored.png": {
+      "path": "/var/folders/kq/zqwqqfmj4072vtjqsv4wsd700000gn/T/jupiter-wallet-ui-native-373km4l1/native-ui-restored.png",
+      "bytes": 68398,
+      "sha256": "3846c2010a320c56d09beebde6015cbc531879fd07a22098a6e73fa516966bee"
+    },
+    "live-ui-handoff.png": {
+      "path": "/var/folders/kq/zqwqqfmj4072vtjqsv4wsd700000gn/T/jupiter-wallet-ui-native-373km4l1/live-ui-handoff.png",
+      "bytes": 35631,
+      "sha256": "2dc191cc13f28447cd44024dbf6cc17479e58900e7fec81f083152218dbb39bf"
+    }
+  },
+  "running_urls": {
+    "native": "http://127.0.0.1:15973/",
+    "live_owner": "http://127.0.0.1:15974/"
+  },
+  "public_preflight": {
+    "checkedAt": "2026-10-12T21:51:04.113Z",
+    "rpc": "https://api.mainnet-beta.solana.com",
+    "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+    "programDeployment": "413092478",
+    "mintOwner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "readOnly": true,
+    "ownerWalletConnected": false,
+    "keeperAcceptance": false
+  },
+  "public_discovery_probe": {
+    "available": true,
+    "throwaway_owner": true,
+    "position_count": 0
+  },
+  "phantom_capability": {
+    "checked_in_real_chrome": true,
+    "origin": "http://127.0.0.1:15973",
+    "connect": true,
+    "signMessage": true,
+    "signTransaction": true,
+    "connect_or_sign_invoked": false
+  },
+  "cold_reload": {
+    "before": "browser-after-1791842759079.json",
+    "after": "browser-after-1791842768558.json",
+    "messageSignatures": [
+      3,
+      3
+    ],
+    "transactionSignatures": [
+      2,
+      2
+    ]
+  }
+}
